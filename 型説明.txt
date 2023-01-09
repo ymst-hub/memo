@@ -21,12 +21,13 @@ Boolean型
 
 
 Byte型
-    01でデータを取り出す
-    コンピューターがやり取りするものそのままのイメージ
-    一番大きい型（変換してないからね！！）
+    小さい整数
+    マイナスもOK
+    Integerでも扱えるが、必要なメモリのサイズが少ないため、軽くなる…はず
 
 Integer型
     整数を扱える
+    メインで使う数字の型
     １とかの数字を入れる
     例）
         答え:Integer= 2:Integer + 1:Integer 
@@ -39,7 +40,7 @@ Integer64型
 
 Float型
     小数点を扱う
-    0.1とか
+    マイナスもOK
 
 Name型
     変更不可能な文字列
@@ -54,18 +55,12 @@ String型
     「あいう」とかが当たる
 
 Vector型
-    配列
-    要素を追加可能
-
-    例）
-        ア行:Vector = あ:string い:string う:string
-        ア行 = あいう
-        ア行 + え:string お:string
-        ア行 = あいうえお
+    ３つの型（たぶんFloat を 3つ管理している）
+    方向とかRGBをまとめて管理できる
 
 Roater型
-    方向の型（Integer を 3つ管理している）
-    方向のxyzをまとめて管理できる
+    回転を扱う型
+    TransformのRotation部分のイメージ
 
 Transform型
     位置、回転、スケールをまとめた型（Integer を　9つ管理している）
